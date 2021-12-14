@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black !important;
+    color: white;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: black !important;
+}
+
+.navbar .nav-link {
+    color: white !important;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.navbar .btn {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #b92224;
+    width: 170px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.about {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("hell.png");
+    color: white;
+}
+
+.about h1 {
+    font-size: 50px;
+}
+
+.about p {
+    font-size: 22px;
+}
+
+.about .btn {
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    border: none;
+    padding: 15px;
+    width: 200px;
+    border-radius: 8px;
+}
+
+.about .images {
+    background: rgba(255, 255, 255, .2);
+    border: 1px solid #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 40%);
+    width: 320px;
+}
+
+@media screen and (max-width:786px) {
+    .about h1 {
+        font-size: 40px;
+    }
+    .about p {
+        font-size: 18px;
+    }
+    .about .btn {
+        padding: 10px 5px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .about {
+        height: 100%;
+    }
+}
+
+.about .images img {
+    border-radius: 20px;
+}
+
+.story h1 {
+    color: #db2225;
+    text-shadow: 0 1px 3px #b92224;
+    font-weight: 800;
+    text-align: center;
+    font-size: 3.75em;
+    text-align: center;
+    font-weight: 700;
+}
+
+.story h2 {
+    color: #db2225;
+    font-weight: 700;
+    font-size: 54px;
+}
+
+.story p {
+    font-size: 20px;
+    color: white;
+}
+
+.storyImg img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 3em;
+}
+
+.storyRadius {
+    border-radius: 50px;
+}
+
+.mint {
+    color: white;
+}
+
+.mint h1 {
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+}
+
+.mint-container {
+    font-weight: 300;
+    font-size: 20px;
+    border: 3px solid #b92224;
+    box-shadow: 0 0 5px #b92224;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.mint-container h2 {
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.mint-container h3 {
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.mint .minusBtn {
+    width: 100px;
+    border-radius: 50px 0 0 50px;
+    font-size: 34px;
+    background-color: white;
+}
+
+.mint .plusBtn {
+    width: 100px;
+    border-radius: 0px 50px 50px 0px;
+    font-size: 34px;
+    background-color: white;
+}
+
+.mint .numBtn {
+    width: 100px;
+    border-radius: 0px;
+    font-size: 34px;
+    background-color: white;
+}
+
+.mint .numBtn:hover {
+    cursor: default;
+}
+
+.mint .minusBtn:hover,
+.mint .plusBtn:hover,
+.mint .connectBtn:hover {
+    background-color: #b92224;
+    color: white;
+}
+
+.mint .connectBtn {
+    width: 200px;
+    border-radius: 50px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:786px) {
+    .mint .minusBtn,
+    .mint .plusBtn,
+    .mint .numBtn {
+        width: 80px;
+    }
+}
+
+.roadmap {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("hell.png");
+    color: white;
+}
+
+.roadmap h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.roadmap .card {
+    border: 2px solid #db2225;
+    background: linear-gradient( 270deg, rgba(95, 4, 9, .8) 0, rgba(185, 34, 36, .8) 100%);
+    border-radius: 20px !important;
+}
+
+.roadmap .card-header button {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.accordion-button::after {
+    content: "\2212";
+    font-size: 2rem;
+    position: absolute;
+    right: 2rem;
+}
+
+.accordion-button.collapsed::after {
+    content: "\002B";
+}
+
+.art h1 {
+    font-size: 3rem;
+    color: #db2225;
+    font-weight: 700;
+}
+
+.art p {
+    font-size: 1.6em;
+    font-weight: 300;
+}
+
+.art .features p {
+    border-left: 20px solid #db2225;
+    margin: 20px;
+    padding: 10px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.art .btn {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #b92224;
+    width: 170px;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+}
+
+@media screen and (max-width:786px) {
+    .art p {
+        font-size: 22px;
+    }
+}
+
+.plat h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.plat p {
+    font-weight: 300;
+}
+
+.plat .btn {
+    background-color: rgb(0, 102, 197);
+    color: white;
+}
+
+.plat .btn:hover {
+    background-color: rgb(0, 60, 116);
+}
+
+.teamImage {
+    margin: 10%;
+}
+
+.team h1 {
+    font-size: 3.25em;
+    color: red;
+    font-weight: 700;
+    margin: 100px 0px;
+}
+
+.team h2 {
+    font-size: 2.5rem;
+    color: red;
+    font-weight: 700;
+}
+
+.team p {
+    font-size: 22px;
+}
+
+@media screen and (max-width:786px) {
+    .team img {
+        width: 100%;
+    }
+    .team h2 {
+        font-size: 22px;
+    }
+    .team p {
+        font-size: 18px;
+    }
+}
+
+.faq h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.faq .card {
+    border: 2px solid #db2225;
+    background: linear-gradient( 270deg, rgba(95, 4, 9, .8) 0, rgba(185, 34, 36, .8) 100%);
+    border-radius: 20px !important;
+}
+
+.faq .card-header button {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.faq .accordion-button::after {
+    content: "\2212";
+    font-size: 2rem;
+    position: absolute;
+    right: 2rem;
+}
+
+.faq .accordion-button.collapsed::after {
+    content: "\002B";
+}
+
+@media screen and (max-width:786px) {
+    .faq .accordion-button::after {
+        right: 1rem;
+    }
+}
+
+.footer {
+    margin-top: 100px;
+    background-color: #b92224;
+}
